@@ -27,7 +27,7 @@ const Example = () => {
                         <div className="text-center text-capitalize mb-5">
                             <input type='text' placeholder='enter color' className='text-center text-capitalize' onChange={(event) => setColorCode(event.target.value)}></input>
                             {/* <h1 style={{color:`${headName}`}}>{headName}</h1> */}
-                            <h1 >your Color :<span style={{ color: `${colorCode}` }}>{colorCode}</span></h1>
+                            <h1 >your Color is :<span style={{ color: `${colorCode}` }}>{colorCode}</span></h1>
                             <button className='btn text-capitalize text-center' style={{ backgroundColor: `${colorCode}`, width: '100px', height: '100px' }} onClick={clickBtn}></button>
                         </div>
 
