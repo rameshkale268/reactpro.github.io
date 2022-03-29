@@ -1,0 +1,71 @@
+password:Riddish@208
+my weather  api key :0913f6af803b46488a38cf6ff4efc521
+
+api.openweathermap.org/data/2.5/weather?q=pune&appid=eaa89a07b91904dcd849b6030523cf78
+
+<div className='container-fluid'>
+    <div className='row'>
+        <div className=' col-10 mx-auto'>
+            
+        </div>
+    </div>
+</div>
+
+E:\RAMESH\reactProgramBegin\helloworld/node_modules/bootstrap/dist/js/bootstrap.bundle.js
+
+
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+const Header = () => {
+    return (
+        <>
+            <div className='container-fluid my-4' >
+                <div className='row'>
+                    <div className=' col-12 col-10  mx-auto '>
+                        <nav className="navbar navbar-expand-lg ">
+                            <div className="container-fluid ">
+                                <div className='fixed-top '>
+                                    <NavLink to='/' className='text-decoration-none'>
+                                        Riddhs
+                                        <span className='text-info my-5' style={{ fontSize: '25px' }}>Tech.
+                                        </span>
+                                    </NavLink>
+                                    <button
+                                        className="navbar-toggler"
+                                        style={{background:'#0dcaf0'}}
+                                        type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent"
+                                        aria-expanded="false"
+                                        aria-label="Toggle navigation">
+                                        <span className="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div className="collapse navbar-collapse text-info" id="navbarSupportedContent">
+                                        <ul className="navbar-nav m-lg-auto mb-2 mb-lg-0">
+                                            <li >
+                                                <NavLink className='NavLink' exact activeClassName='active_class btn-outline-danger' to='/'>Covid-19</NavLink>
+                                            </li>
+                                            <li className="nav-item">
+                                                <NavLink className='NavLink' exact activeClassName='active_class btn-outline-danger' to='/ToDoList'>ToDo List</NavLink>
+                                            </li>
+                                            <li className="nav-item">
+                                                <NavLink className='NavLink' exact activeClassName='active_class btn-outline-danger' to='/GoogleKeepComponent'>Keep Note</NavLink>
+                                            </li>
+                                            <li className="nav-item">
+                                                <NavLink className='NavLink' exact activeClassName='active_class btn-outline-danger' to='/FormControl'>SF Prdn</NavLink>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </>);
+}
+export default Header;
